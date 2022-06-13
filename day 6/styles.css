@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #333;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+:root {
+  --primary-color: hsl(0, 100%, 50%);
+  --primary-color-dark: hsl(0, 100%, 45%);
+  --sec-color: #555;
+  --dark-color: black;
+}
+
+.svg-icon-netflix-logo {
+  fill: var(--primary-color);
+  width: 100px;
+}
+
+.btn {
+  background-color: var(--primary-color-dark);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--primary-color);
+}
+.btn-lg {
+  font-size: 1.2rem;
+}
+.btn-rounded {
+  border-radius: 5px;
+}
+.text-primary {
+  color: var(--primary-color-dark) !important
+}
+a.text-primary:hover {
+  color: var(--primary-color)
+}
+.get-started {
+  position: relative;
+}
+.get-started label {
+  position: absolute;
+  left: 1rem;
+  top: 15%;
+  font-size: 1.1rem;
+  color: rgba(51, 51, 51, 0.7);
+  font-weight: 500;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.get-started input:active ~ label,
+.get-started input:focus ~ label,
+.get-started input:focus-within ~ label {
+  transform-origin: left top;
+  transform: scale(0.5) translateY(-100%);
+}
+
+.section {
+  margin-bottom: 6px;
+}
+/* Hero section */
+.hero {
+  position: relative;
+  height: 65vh;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/5ea364b1-8e59-4693-8ad8-f0eaee32d1bf/402b38c2-bc30-43fa-847b-ccad90d9198b/NG-en-20220530-popsignuptwoweeks-perspective_alpha_website_small.jpg)
+      center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  min-width: 350px;
+  margin: 5rem auto 2rem;
+  text-align: center;
+}
+
+.hero-content .text-sm {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.get-started {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.get-started .input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.get-started .btn {
+  width: max-content;
+  margin: auto;
+}
+
+/* perks section */
+
+.perks {
+  background-color: var(--dark-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+.perks .text {
+  text-align: center;
+}
+.perks .text-sm {
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.perks .image-animation {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+.perks img {
+  z-index: 2;
+  position: relative;
+}
+.perks .image-animation .video {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+}
+.perks .image-animation .video video {
+  width: 80%;
+}
+.perks .downloading-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.perks .downloading {
+  position: absolute;
+  bottom: 8%;
+  width: 90%;
+  max-width: 500px;
+  min-width: 300px;
+  border: #999 2px solid;
+  border-radius: 1rem;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+.perks .downloading .img-wrapper {
+  width: 40px;
+  margin: 0.5rem 1rem;
+}
+.perks .downloading p {
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.perks .downloading .check-animation {
+  position: absolute;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.perks .downloading .check-animation::after {
+  content: " ";
+  position: absolute;
+  border-bottom: 2px solid white;
+  width: 1rem;
+  bottom: -0.5rem;
+  z-index: 1;
+}
+
+/* FAQ */
+
+.faq.perks {
+  padding-inline: 0;
+}
+
+.faq .text h1 {
+  font-size: 1.5rem;
+}
+
+.faq .faq-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.faq .faq-item {
+  background-color: #222;
+  margin: 0.3rem auto;
+  width: 100%;
+  max-width: 500px;
+  cursor: pointer;
+  position: relative;
+}
+.faq-item-prompt {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq .faq-item-prompt span {
+  font-size: 1.5rem;
+  transition: transform 0.1s ease-in;
+}
+.show .faq-item-prompt span {
+  transform: rotate(45deg)
+}
+.faq .faq-item-desc {
+  padding: 1rem;
+  position: relative;
+  border-top: black 2px solid;
+  transform-origin: top;
+  animation: open-down .1s ease-in forwards;
+}
+
+@keyframes open-down {
+  from {
+    /* max-height: 0; */
+    transform: scaleY(0);
+  }
+
+  to {
+    max-height: 500px;
+    transform: scaleY(1);
+  }
+}
+
+.faq .get-started,
+.faq .wrapper > p {
+  margin: 1rem auto;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--dark-color);
+  padding: 2rem 1rem 1rem;
+  color: var(--sec-color);
+}
+
+.footer * {
+  color: var(--sec-color);
+}
+
+.footer a.contact {
+  font-size: 1.1rem;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-nav {
+  margin: 1rem 0;
+  font-size: 1rem;
+  width: 100%;
+}
+.footer-nav .footer-nav-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.footer .copyright {
+  margin: 3rem 0 1rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 550px) {
+  .hero {
+    height: 110vh;
+  }
+  .faq .wrapper {
+    width: 90%;
+  }
+  .faq .text h1 {
+    font-size: 2.5rem;
+  }
+  .faq .wrapper > p {
+    font-size: 1.3rem;
+  }
+  .perks:last-child .faq-item {
+    max-width: 90%;
+    /* padding: 0.8rem 2rem; */
+  }
+  .perks:last-child .faq-item p {
+    font-size: 1.2rem;
+  }
+  .perks:last-child .faq-item span {
+    font-size: 2.5rem;
+  }
+  .footer .footer-nav .footer-nav-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 949px) {
+  .svg-icon-netflix-logo {
+    width: 120px;
+  }
+  .hero-top {
+    padding-inline: 3rem;
+  }
+  .hero-content {
+    max-width: 600px;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content > p.text-sm {
+    margin-bottom: 1.6rem;
+  }
+  .hero-content > p.text-sm:nth-child(2) {
+    font-size: 1.6rem;
+  }
+  .perks {
+    flex-direction: row;
+  }
+
+  .perks:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+  }
+
+  .perks .text {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .perks .text h1 {
+    font-size: 4rem;
+  }
+  .perks .text p {
+    font-size: 1.5rem;
+  }
+
+  .perks > figure {
+    flex-basis: 50%;
+  }
+  .perks > div {
+    flex-basis: 50%;
+  }
+  .perks .wrapper {
+    flex-basis: 80%;
+    max-width: 800px;
+  }
+  .perks:last-child .text h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .perks:last-child .faq-item {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  .faq .faq-item .faq-item-prompt, .faq .faq-item .faq-item-desc {
+    padding: 1.2rem 2rem;
+  }
+  .perks:last-child .faq-item p {
+    font-size: 1.5rem;
+  }
+  .perks:last-child .faq-item span {
+    font-size: 3rem;
+  }
+  .get-started {
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2px;
+  }
+  .get-started .input {
+    margin: 0;
+    padding: 1.5rem 1rem;
+  }
+  .get-started .btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .get-started .btn i {
+    margin-left: 1rem;
+  }
+  .get-started p.text-sm {
+    grid-column: 1/3;
+  }
+  .get-started label {
+    top: 30%;
+  }
+  
+  .get-started input:active ~ label,
+  .get-started input:focus ~ label,
+  .get-started input:focus-within ~ label {
+    transform-origin: left top;
+    transform: scale(0.6) translateY(-60%);
+  }
+  .footer .footer-nav .footer-nav-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

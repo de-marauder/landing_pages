@@ -1,0 +1,85 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: darkkhaki;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.scroll-x {
+    overflow-x: auto;
+}
+.card-1, .card-2, .card-3 {
+    color: white;
+    padding: 2rem;
+    background-color: #333;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.card-1:hover, .card-2:hover, .card-3:hover {
+    box-shadow: 0 0 1rem #555;
+}
+.flex-1, .flex-2, .flex-3 {
+    display: flex;
+}
+.col {
+    flex-direction: column;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}
+.around {
+    justify-content: space-around;
+}
+.between {
+    justify-content: space-between;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.order-1 {
+    order: 1
+}
+.order-2 {
+    order: 2
+}
+.order-3 {
+    order: 3
+}
+.order-4 {
+    order: 4
+}
+.order-5 {
+    order: 5
+}
+.order-6 {
+    order: 6
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+.basis-1 {
+    flex-basis: 20%;
+}
+.start {
+    align-self: flex-start;
+}
+.end {
+    align-self: flex-end;
+}
+.center {
+    align-self: center;
+}
+
+.p-1 {
+    padding: 1rem;
+    background-color: greenyellow;
+}

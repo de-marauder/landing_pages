@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  background-color: #eee;
+  border-bottom: 1px solid #333;
+  animation: slide-down 0.5s linear;
+  z-index: 10;
+}
+@media (min-width: 859px) {
+  .sidebar {
+    display: none;
+  }
+}
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.sidebar .side-nav {
+  display: grid;
+}
+.sidebar .side-nav .side-nav-item,
+.sidebar .side-nav .tab.dropdown {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.sidebar .side-nav .tab.dropdown:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.sidebar .side-nav .side-nav-item:hover,
+.sidebar .side-nav .tab.dropdown .drop-nav-list .nav-item:hover {
+  text-decoration: underline;
+}
+.sidebar .tab.dropdown .flex {
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  /* border-bottom: 1px solid #ddd; */
+}
+.sidebar .tab.dropdown .drop-nav-list {
+  margin-left: 1rem;
+}
+.sidebar .tab.dropdown .drop-nav-list .nav-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Dropdown */
+
+@media (max-width: 859px) {
+  .drop {
+    display: none !important;
+  }
+}
+@media (min-width: 859px) {
+  .drop {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    margin: auto;
+    width: 100%;
+    padding-top: 2rem;
+    background-color: #eee;
+    border-bottom: 2px solid #333;
+    animation: slide-down 0.5s linear forwards;
+    z-index: 10;
+  }
+  .drop .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .drop .grid .drop-nav-list {
+    flex-direction: column;
+  }
+  .drop .drop-nav-list .nav-item {
+    margin-left: 0;
+    font-size: 0.7rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+  }
+  .drop .drop-nav-list .nav-item:hover,
+  .drop .drop-nav-list .tab.dropdown:hover {
+    border: none;
+    text-decoration: underline;
+  }
+  .drop h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .drop .drop-nav-item.map {
+    padding: 0.5rem;
+    background-color: #ddd;
+  }
+}
+.drop .drop-nav-item.map p {
+  width: max-content;
+  margin: auto;
+}
+
+.show {
+  display: block;
+}

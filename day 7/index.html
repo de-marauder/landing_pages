@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Macrohard</title>
+  </head>
+  <body>
+    <header id="top" class="container">
+      <nav class="nav">
+        <button id="menu-btn" class="menu-btn">
+          <div></div>
+        </button>
+        <div class="logo">
+          <a href="/">
+            <img src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Macrohard 248</a></li>
+          <li class="nav-item"><a href="#">Office</a></li>
+          <li class="nav-item"><a href="#">Doors</a></li>
+          <li class="nav-item"><a href="#">Ycube</a></li>
+          <li class="nav-item"><a href="#">Support</a></li>
+        </ul>
+        <div class="nav-utils">
+          <button id="navbar-dropdown-btn" class="tab dropdown">
+            <p>
+              <span class="nav-item"> All Macrohard </span>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </p>
+          </button>
+          <button id="search">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </button>
+          <button id="cart">
+            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+          </button>
+          <button id="sign-in">
+            <i class="fa-solid fa-user-plus"></i>
+          </button>
+        </div>
+      </nav>
+      <aside id="nav-dropdown" class="drop">
+        <section class="container grid">
+          <div>
+            <h2>Software</h2>
+            <nav class="nav">
+              <ul id="software" class="drop-nav-list">
+                <li class="nav-item">Doors Apps</li>
+                <li class="nav-item">TwoDrive</li>
+                <li class="nav-item">InWatch</li>
+                <li class="nav-item">Floorpe</li>
+                <li class="nav-item">Twobook</li>
+                <li class="nav-item">Macrohard Teams</li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h2>PCs & Devices</h2>
+            <nav class="nav">
+              <ul id="pc-devices" class="drop-nav-list">
+                <li class="nav-item">Account profile</li>
+                <li class="nav-item">Returns</li>
+                <li class="nav-item">Order tracking</li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h2>Entertainment</h2>
+            <nav class="nav">
+              <ul id="entertainment" class="drop-nav-list">
+                <li class="nav-item">PC games</li>
+                <li class="nav-item">Doors digital games</li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h2>Business</h2>
+            <nav class="nav">
+              <ul id="business" class="drop-nav-list">
+                <li class="nav-item">Macrohard Cloud</li>
+                <li class="nav-item">Macrohard Security</li>
+                <li class="nav-item">Azure</li>
+                <li class="nav-item">Dynamics 248</li>
+                <li class="nav-item">Macrohard 248</li>
+                <li class="nav-item">Macrohard Advertising</li>
+                <li class="nav-item">Macrohard Industry</li>
+                <li class="nav-item">Macrohard Teams</li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h2>Developer & IT</h2>
+            <nav class="nav">
+              <ul id="dev-IT" class="drop-nav-list">
+                <li class="nav-item">Developer Center</li>
+                <li class="nav-item">Documentation</li>
+                <li class="nav-item">Macrohard Learn</li>
+                <li class="nav-item">Macrohard Tech Community</li>
+                <li class="nav-item">Azue Marketplace</li>
+                <li class="nav-item">AppSource</li>
+                <li class="nav-item">Macrohard Power Platform</li>
+                <li class="nav-item">Visual Studio</li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h2>Other</h2>
+            <nav class="nav">
+              <ul id="other" class="drop-nav-list">
+                <li class="nav-item">Free downloads & security</li>
+                <li class="nav-item">Education</li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <ul>
+          <li class="drop-nav-item map">
+            <p>
+              <a href="#">View Sitemap</a>
+              <i class="fas fa-chevron-right"></i>
+            </p>
+          </li>
+        </ul>
+      </aside>
+      <aside id="sidebar" class="sidebar">
+        <nav class="side-nav">
+          <ul class="side-nav-list">
+            <li class="side-nav-item"><a href="#">Macrohard 248</a></li>
+            <li class="side-nav-item"><a href="#">Office</a></li>
+            <li class="side-nav-item"><a href="#">Doors</a></li>
+            <li class="side-nav-item"><a href="#">Ycube</a></li>
+            <li class="side-nav-item"><a href="#">Support</a></li>
+            <li id="drop-software" class="tab grid dropdown">
+              <div class="flex">
+                <span class="nav-item">Software</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+            </li>
+            <li id="drop-pc-devices" class="tab grid dropdown">
+              <div class="flex">
+                <span class="nav-item">PCs & Devices</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+            </li>
+            <li id="drop-entertainment" class="tab grid dropdown">
+              <div class="flex">
+                <span class="nav-item">Entertainment</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+            </li>
+            <li id="drop-business" class="tab grid dropdown">
+              <div class="flex">
+                <span class="nav-item">Business</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+            </li>
+            <li id="drop-dev-IT" class="tab grid dropdown">
+              <div class="flex">
+                <span class="nav-item">Developer & IT</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+            </li>
+            <li id="drop-other" class="tab grid dropdown">
+              <div class="flex">
+                <span class="nav-item">Other</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+            </li>
+            <li class="side-nav-item">
+              <a href="#">View Sitemap</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </header>
+    <main>
+      <section class="section hero">
+        <div class="hero-image">
+          <img
+            class="img-sm-screen"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP1-539x440"
+            alt="hero-laptop"
+          />
+          <img
+            class="img-md-screen"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP3-1083x600"
+            alt="hero-laptop"
+          />
+          <img
+            class="img-lg-screen"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP4-1399x600"
+            alt="hero-laptop"
+          />
+        </div>
+        <div class="text-hero">
+          <h1>Designed for today--and tomorrow</h1>
+          <p>
+            The next-generation of games. Your goals. Friends and family.
+            Windows 11 was made to bring you closer to everything you love
+          </p>
+          <button class="btn cta-btn">See if your PC is ready</button>
+        </div>
+      </section>
+      <section id="section-2" class="container flex section">
+        <div class="card">
+          <figure>
+            <img
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-m365-icons-7up-1668x940?wid=297&hei=167&fit=crop"
+              alt="ms-img"
+            />
+          </figure>
+          <div class="text">
+            <h2>Macrohard 248</h2>
+            <p>
+              Premium Office apps, extra cloud storage, advanced security, and
+              more—all in one convenient subscription.
+            </p>
+          </div>
+          <ul class="card-list">
+            <li class="card-list-item">
+              <p>For up to 6 people</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li class="card-list-item">
+              <p>For 1 person</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <figure>
+            <img
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=297&hei=167&fit=crop"
+              alt="ms-img"
+            />
+          </figure>
+          <div class="text">
+            <h2>Macrohard Curve</h2>
+            <p>
+              World-class performance with more privacy, more productivity, and
+              more value while you browse.
+            </p>
+          </div>
+          <ul class="card-list">
+            <li class="card-list-item">
+              <p>Download now</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <figure>
+            <img
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=297&hei=167&fit=crop"
+              alt="ms-img"
+            />
+          </figure>
+          <div class="text">
+            <h2>Macrohard TwoDrive</h2>
+            <p>
+              Save your files and photos to OneDrive and access them from any
+              device, anywhere.
+            </p>
+          </div>
+          <ul class="card-list">
+            <li class="card-list-item">
+              <p>Learn more</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <figure>
+            <img
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=297&hei=167&fit=crop"
+              alt="ms-img"
+            />
+          </figure>
+          <div class="text">
+            <h2>Twobook</h2>
+            <p>Organize your notes and your life</p>
+          </div>
+          <ul class="card-list">
+            <li class="card-list-item">
+              <p>Learn more</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container hero">
+        <div class="section">
+          <div class="hero-image">
+            <img
+              class="img-sm-screen"
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Hero-MSCOM-Outlook-iOS-Android:VP2-859x540"
+              alt="hero-laptop"
+            />
+            <img
+              class="img-md-screen"
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Hero-MSCOM-Outlook-iOS-Android:VP3-1083x600"
+              alt="hero-laptop"
+            />
+            <img
+              class="img-lg-screen"
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Hero-MSCOM-Outlook-iOS-Android:VP4-1260x600"
+              alt="hero-laptop"
+            />
+          </div>
+          <div class="text-hero">
+            <h1>Outlook for IOS and Andriod</h1>
+            <p>Connect. Organize. Get things done.</p>
+            <button class="btn cta-btn">Download now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container flex section">
+        <h1>For business</h1>
+        <div class="flex section">
+          <div class="card">
+            <figure>
+              <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Microsoft-Teams-Commercial?wid=297&hei=167&fit=crop"
+                alt="ms-img"
+              />
+            </figure>
+            <div class="text">
+              <h2>Get Macrohard Teams for free</h2>
+              <p>
+                Online meetings, chat, and shared cloud storage—all in one
+                place.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li class="card-list-item">
+                <p>Sign up for free</p>
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-M365-CP-Microsoft365-Commercial?wid=297&hei=167&fit=crop"
+                alt="ms-img"
+              />
+            </figure>
+            <div class="text">
+              <h2>Macrohard 248 for business</h2>
+              <p>
+                Stay a step ahead with powerful apps for productivity,
+                connection, and security.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li class="card-list-item">
+                <p>Shop now</p>
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-MSCOM-Viva-3?wid=297&hei=167&fit=crop"
+                alt="ms-img"
+              />
+            </figure>
+            <div class="text">
+              <h2>Macrohard Viva</h2>
+              <p>
+                Discover the new employee experience platform designed to help
+                people connect, focus, learn, and thrive at work.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li class="card-list-item">
+                <p>Learn more</p>
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/JIC-DPS-CP01?wid=297&hei=167&fit=crop"
+                alt="ms-img"
+              />
+            </figure>
+            <div class="text">
+              <h2>Welcome to your Doors 248 Cloud PC</h2>
+              <p>
+                Securely stream your Windows experience from the Microsoft cloud
+                to any device.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li class="card-list-item">
+                <p>Get it today</p>
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="container follow section grid">
+        <div class="flex">
+          <p>Follow Macrohard</p>
+          <ul class="social-links flex">
+            <li><i class="fa-brands fa-lg fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-lg fa-twitter"></i></li>
+            <li><i class="fa-brands fa-lg fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <button id="scroll-to-top" class="btn sec-btn right">
+          <i class="fas fa-arrow-up"></i> Back to top
+        </button>
+      </section>
+    </main>
+    <footer>
+      <section class="footer container grid">
+        <div>
+          <h2>Macrohard Store</h2>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">Account profile</li>
+              <li class="nav-item">Returns</li>
+              <li class="nav-item">Order tracking</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">Macrohard in education</li>
+              <li class="nav-item">Devices for education</li>
+              <li class="nav-item">Macrohard Teams for Education</li>
+              <li class="nav-item">Macrohard 248 for Education</li>
+              <li class="nav-item">Office Education</li>
+              <li class="nav-item">Educator training and development</li>
+              <li class="nav-item">Deals for students and parents</li>
+              <li class="nav-item">Azure for students</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h2>Business</h2>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">Macrohard Cloud</li>
+              <li class="nav-item">Macrohard Security</li>
+              <li class="nav-item">Azure</li>
+              <li class="nav-item">Dynamics 248</li>
+              <li class="nav-item">Macrohard 248</li>
+              <li class="nav-item">Macrohard Advertising</li>
+              <li class="nav-item">Macrohard Industry</li>
+              <li class="nav-item">Macrohard Teams</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h2>Developer & IT</h2>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">Developer Center</li>
+              <li class="nav-item">Documentation</li>
+              <li class="nav-item">Macrohard Learn</li>
+              <li class="nav-item">Macrohard Tech Community</li>
+              <li class="nav-item">Azue Marketplace</li>
+              <li class="nav-item">AppSource</li>
+              <li class="nav-item">Macrohard Power Platform</li>
+              <li class="nav-item">Visual Studio</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">Careers</li>
+              <li class="nav-item">About Microsoft</li>
+              <li class="nav-item">Company news</li>
+              <li class="nav-item">Investors</li>
+              <li class="nav-item">Sustainability</li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <div class="copyright container">
+        <nav class="nav flex">
+          <div class="country flex">
+            <i class="fa-solid fa-earth-americas"></i>
+            <p>English (Nigeria)</p>
+          </div>
+          <ul class="nav-list wrap flex">
+            <li class="nav-item">Contact Macrohard</li>
+            <li class="nav-item">Privacy</li>
+            <li class="nav-item">Terms of use</li>
+            <li class="nav-item">Trademarks</li>
+            <li class="nav-item">About our ads</li>
+            <li class="nav-item">
+              <a href="https://de-marauder.vercel.app" target="_blank"
+                >&copy; de-marauder</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
