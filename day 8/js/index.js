@@ -1,5 +1,5 @@
 
-// !? Night Sky
+// !* Night Sky
 
 $(function() {
     var nightsky = ["#280F36", "#632B6C", "#BE6590", "#FFC1A0", "#FE9C7F"];
