@@ -9,7 +9,6 @@
   --pri-color-light: hsl(263, 54%, 53%, 0.5);
   --sec-color: hsl(265, 100%, 4%);
   --light-color: rgba(255, 255, 255, 0.7);
-  /* color: #19023e; */
 }
 body {
   width: 100vw;
