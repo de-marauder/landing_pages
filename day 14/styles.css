@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(
+    120deg,
+    hsl(300, 33%, 2%),
+    hsl(300, 33%, 72%),
+    hsl(300, 33%, 52%)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main > p {
+  color: violet;
+  font-weight: 600;
+  margin: -3rem 0 3rem;
+  text-shadow: 0 7px 5px rgb(121, 103, 121);
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.btn {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.5s;
+  margin: 0.5rem 0;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.btn-pri {
+  background-color: violet;
+  border: 1px solid violet;
+}
+.btn-sec {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.input input {
+  background-color: #eee;
+  border: none;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border-radius: 1rem;
+  max-width: 800px;
+  overflow: hidden;
+  height: 400px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 
+  10px -10px .5rem hsl(0, 0%, 100%),
+  10px 10px .5rem hsl(0, 0%, 100%),
+  -10px -10px .5rem hsl(0, 0%, 100%),
+  -10px 10px .5rem hsl(0, 0%, 100%)
+  ;
+}
+.form-container {
+  background-color: #fff;
+  height: 100%;
+  width: 50%;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.signin-container,
+.signup-container {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.signin-container {
+  z-index: 1;
+}
+
+.signin,
+.signup {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.signin h1,
+.signup h1 {
+  color: violet;
+}
+.signin .text,
+.signup .text {
+  font-size: 0.7rem;
+  margin: 0.5rem 0;
+}
+.signin .socials .social-icon,
+.signup .socials .social-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 0.7rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  margin: 0 1rem;
+  background-color: violet;
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.2s ease-in;
+}
+.signin .socials .social-icon:hover,
+.signup .socials .social-icon:hover {
+  color: violet;
+  background-color: white;
+}
+
+/* Overlay Styles */
+
+.overlay-container {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.signup-overlay,
+.signin-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: violet;
+  background: linear-gradient(135deg, rgb(238, 130, 238), rgb(116, 91, 116));
+  transition: transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+}
+.signup-overlay {
+  z-index: 5;
+}
+.overlay-right {
+  right: 0;
+}
+.overlay-left {
+  left: -200%;
+}
+.signup-overlay h1,
+.signin-overlay h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+.signup-overlay p,
+.signin-overlay p {
+  margin: 2rem 0;
+}
+.signup-overlay .btn,
+.signin-overlay .btn {
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+/* Move overlay and forms */
+
+.active-form.form-container {
+  transform: translate(100%);
+}
+.active-form.form-container .signup-container {
+  z-index: 6;
+}
+
+.overlay-active {
+  transform: translate(-100%);
+}
+.overlay-active .overlay-left {
+  left: 0;
+  transform: translateX(0%);
+  opacity: 1;
+  z-index: 10;
+}
