@@ -27,7 +27,9 @@ h1 {
     font-size: 2rem;
     font-weight: 300;
 }
-
+a {
+    text-decoration: none;
+}
 
 .container {
     width: 90%;
@@ -69,6 +71,9 @@ h1 {
 }
 .flex {
     display: flex;
+}
+.flex-col {
+    flex-direction: column;
 }
 .center {
     justify-content: center;
@@ -148,10 +153,18 @@ h1 {
     right: 0;
     background-color: rgba(0,0,0,0.5);
 }
-.hero h1 {
-    color: var(--pri-color);
+.hero * {
+
     position: relative;
 }
+.hero h1 {
+    color: var(--pri-color);
+}
+.hero .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 /* Sections */
 
 .section-1, .section-3, .section-4 .wrapper, .section-5 {
@@ -192,8 +205,9 @@ h1 {
 }
 .section-2 .section-2__title {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    font-weight: 300;
+    color: var(--pri-color);
+    font-weight: 600;
+    text-shadow: 0 .4rem 0.6rem #333;
     margin: 3rem auto;
 }
 .card {

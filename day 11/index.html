@@ -17,8 +17,10 @@
   </head>
   <body>
     <header>
-      <div class="hero bg-fixed flex center">
+      <div class="hero bg-fixed flex flex-col center">
         <h1>DE MARAUDER SHOTS</h1>
+        <button id="hero-btn" class="btn btn-sec">view my work</button>
+
       </div>
     </header>
 
@@ -30,12 +32,12 @@
         </button>
       </div>
 
-      <div class="section-2 text-center">
+      <div id="my-work" class="section-2 text-center">
         <h1 class="section-2__title mb-1">LIMITED EDITION PRINTS</h1>
         <div class="container grid grid-col-1 md-grid-col-6">
           <div class="card md-grid-1-4">
             <div class="img-wrapper">
-              <img src="https://source.unsplash.com/random" alt="" />
+              <img src="https://source.unsplash.com/random?deepsea" alt="" />
             </div>
             <p class="img-text">Lorem ipsum dolor sit amet.</p>
           </div>
@@ -102,5 +104,16 @@
         rights reserved
       </p>
     </footer>
+
+    <script>
+      const heroBtn = document.getElementById("hero-btn");
+      const myWork = document.getElementById("my-work")
+      const showMyWork = () => {
+        myWork.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+      heroBtn.addEventListener("click", showMyWork)
+    </script>
   </body>
 </html>
