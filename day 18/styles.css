@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "oswald", sans-serif;
+}
+.pic1,
+.pic2,
+.pic3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.pic1 {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://source.unsplash.com/random/?beach");
+}
+.pic1::before {
+  position: absolute;
+  content: "De-marauder";
+  top: 1rem;
+  left: 1rem;
+  color: #fff;
+  text-shadow: 3px 3px 5px #333;
+}
+.pic1::after {
+  position: absolute;
+  content: "De-marauder";
+  bottom: 1rem;
+  right: 1rem;
+  color: #fff;
+  text-shadow: 3px 3px 5px #333;
+}
+.pic2 {
+  height: 50vh;
+  background-image: url("https://source.unsplash.com/random/?shore");
+}
+.pic3 {
+  height: 50vh;
+  background-image: url("https://source.unsplash.com/random/?river");
+}
+h1 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 0 0 5px #333;
+  border: 2px white solid;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.section {
+  padding: 3rem 2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.section .text {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-weight: 300;
+}
