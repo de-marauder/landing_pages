@@ -33,9 +33,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+              
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -48,18 +46,26 @@
                   Dropdown
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#buttons">buttons</a></li>
+                  <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#flexbox">Flexbox</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#grid">Grid</a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#forms">Forms</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#navbar">Navbar</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#spacing">Spacing</a>
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -84,7 +90,7 @@
           Bootstrap <span class="title-span">V</span> cheatsheet
         </h1>
         <div class="px-1">
-          <section class="card p-5">
+          <section id="buttons" class="card p-2 p-md-5">
             <h2>Contextual buttons</h2>
             <div class="d-flex flex-wrap">
               <button
@@ -181,7 +187,7 @@
             </div>
           </section>
 
-          <section class="card p-5">
+          <section id="flexbox" class="card p-2 p-md-5">
             <h2>Flexbox</h2>
             <div
               id="flex"
@@ -325,7 +331,7 @@
             </div>
           </section>
 
-          <section class="card p-5">
+          <section id="grid" class="card p-2 p-md-5">
             <h2>Grid</h2>
 
             <div class="container mb-2">
@@ -513,10 +519,10 @@
             </div>
           </section>
 
-          <section class="card p-5">
+          <section id="forms" class="card p-2 p-md-5">
             <h2>Forms</h2>
 
-            <form class="mb-2 border border-primary rounded p-5">
+            <form class="mb-2 border border-primary rounded p-2 p-md-5">
               <div class="mb-3">
                 <label
                   data-bs-toggle="tooltip"
@@ -602,7 +608,7 @@
 
             <h2>Disabled forms</h2>
 
-            <form class="mb-2 border border-primary rounded p-5">
+            <form class="mb-2 border border-primary rounded p-2 p-md-5">
               <div
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
@@ -668,7 +674,9 @@
               </div>
             </form>
           </section>
-          <section class="card p-5">
+
+
+          <section id="navbar" class="card p-2 p-md-5">
             <h2>Navbar</h2>
 
             <nav
@@ -843,7 +851,7 @@
             </nav>
           </section>
 
-          <section class="card p-5">
+          <section id="spacing" class="card p-2 p-md-5">
             <h2>Spacing: margins & padding</h2>
 
             <div class="position-relative container py-3 border border-primary bg-info bg-opacity-10 rounded" style="min-height: 200px;">
