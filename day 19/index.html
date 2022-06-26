@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav role="navigation" class="navbar navbar-expand-lg shadow">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-white" href="#">My cheatSheet</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container pt-5">
+      <main class="rounded">
+        <h1 id="title" class="bg-primary fs-2 pt-4 text-white text-center py-3">
+          Bootstrap <span class="title-span">V</span> cheatsheet
+        </h1>
+        <div class="px-1">
+          <section class="card p-5">
+            <h2>Contextual buttons</h2>
+            <div class="d-flex flex-wrap">
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="btn btn-primary"> Primary</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-primary"
+              >
+                Primary
+              </button>
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="btn btn-secondary">Secondary</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-secondary"
+              >
+                Secondary
+              </button>
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="btn btn-success">Success</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-success"
+              >
+                Success
+              </button>
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="btn btn-danger" >Danger</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-danger"
+              >
+                Danger
+              </button>
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="btn btn-warning">Warning</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-warning"
+              >
+                Warning
+              </button>
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="btn btn-info">Info</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-info"
+              >
+                Info
+              </button>
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="me-3 btn btn-light">Light</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-light"
+              >
+                Light
+              </button>
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="btn btn-link">Dark</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-dark"
+              >
+                Dark
+              </button>
+
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title='<button type="button" class="btn btn-link">Link</button>'
+                type="button"
+                class="me-3 mb-3 btn btn-link"
+              >
+                Link
+              </button>
+            </div>
+          </section>
+
+          <section class="card p-5">
+            <h2>Flexbox</h2>
+            <div
+              id="flex"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex'></div>"
+              class="mb-3 d-flex rounded p-2 bg-primary bg-opacity-10 border border-primary"
+            >
+              <div class="me-3 mb-3 bg-info bg-opacity-10 rounded p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati, commodi.
+              </div>
+              <div class="me-3 mb-3 bg-info bg-opacity-10 rounded p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati, commodi.
+              </div>
+              <div class="me-3 mb-3 bg-info bg-opacity-10 rounded p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati, commodi.
+              </div>
+            </div>
+
+            <h2>Flex Direction--column</h2>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex align-items-end flex-column'></div>"
+              class="d-flex align-items-end flex-column mb-3 rounded p-2 bg-primary bg-opacity-10 border border-primary"
+              style="height: 200px"
+            >
+              <div class="me-3 mb-3 bg-info bg-opacity-10 rounded p-2">
+                Flex item
+              </div>
+              <div class="me-3 mb-3 bg-info bg-opacity-10 rounded p-2">
+                Flex item
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                title="<div class='mt-auto'></div>"
+                class="me-3 mb-3 bg-info bg-opacity-10 rounded mt-auto p-2"
+              >
+                Flex item
+              </div>
+            </div>
+            <h2>Align items</h2>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex align-items-center flex-column'></div>"
+              class="d-flex align-items-center flex-column mb-3 rounded p-2 bg-primary bg-opacity-10 border border-primary"
+              style="height: 200px"
+            >
+              <div class="me-3 mb-3 bg-info bg-opacity-10 rounded p-2">
+                Flex item
+              </div>
+              <div class="me-3 mb-3 bg-info bg-opacity-10 rounded p-2">
+                Flex item
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                title="<div class='mt-auto'></div>"
+                class="me-3 mb-3 bg-info bg-opacity-10 rounded mt-auto p-2"
+              >
+                Flex item
+              </div>
+            </div>
+
+            <h2>justify content</h2>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex justify-content-start flex-column'></div>"
+              class="rounded p-2 bg-primary bg-opacity-10 border border-primary mb-2 d-flex justify-content-start"
+            >
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex justify-content-end flex-column'></div>"
+              class="rounded p-2 bg-primary bg-opacity-10 border border-primary mb-2 d-flex justify-content-end"
+            >
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex justify-content-center flex-column'></div>"
+              class="rounded p-2 bg-primary bg-opacity-10 border border-primary mb-2 d-flex justify-content-center"
+            >
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex justify-content-between flex-column'></div>"
+              class="rounded p-2 bg-primary bg-opacity-10 border border-primary mb-2 d-flex justify-content-between"
+            >
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex justify-content-around flex-column'></div>"
+              class="rounded p-2 bg-primary bg-opacity-10 border border-primary mb-2 d-flex justify-content-around"
+            >
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='d-flex justify-content-evenly flex-column'></div>"
+              class="rounded p-2 bg-primary bg-opacity-10 border border-primary mb-2 d-flex justify-content-evenly"
+            >
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+              <p class="p-2 mx-2 bg-info bg-opacity-10 rounded">flex-item</p>
+            </div>
+          </section>
+
+          <section class="card p-5">
+            <h2>Grid</h2>
+
+            <div class="container mb-2">
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-placement="top"
+                title="<div class='row'></div>"
+                class="row"
+              >
+                <div
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  1 of 2
+                </div>
+                <div
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  2 of 2
+                </div>
+              </div>
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-placement="bottom"
+                title="<div class='row'></div>"
+                class="row"
+              >
+                <div
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  1 of 3
+                </div>
+                <div
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  2 of 3
+                </div>
+                <div
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  3 of 3
+                </div>
+              </div>
+            </div>
+
+            <h2>Grid items</h2>
+            <div class="container mb-2">
+              <div class="row">
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col'></div>"
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  1 of 3
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-6'></div>"
+                  class="col-6 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  2 of 3 (wider)
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col'></div>"
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  3 of 3
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col'></div>"
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  1 of 3
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-5'></div>"
+                  class="col-5 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  2 of 3 (wider)
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col'></div>"
+                  class="col bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  3 of 3
+                </div>
+              </div>
+            </div>
+
+            <h2>Responsive Grid</h2>
+            <div class="container mb-2">
+              <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+              <div class="row">
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-md-8'></div>"
+                  class="col-md-8 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  .col-md-8
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-6 col-md-4'></div>"
+                  class="col-6 col-md-4 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  .col-6 .col-md-4
+                </div>
+              </div>
+
+              <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+              <div class="row">
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-6 col-md-4'></div>"
+                  class="col-6 col-md-4 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  .col-6 .col-md-4
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-6 col-md-4'></div>"
+                  class="col-6 col-md-4 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  .col-6 .col-md-4
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-6 col-md-4'></div>"
+                  class="col-6 col-md-4 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  .col-6 .col-md-4
+                </div>
+              </div>
+
+              <!-- Columns are always 50% wide, on mobile and desktop -->
+              <div class="row">
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-6'></div>"
+                  class="col-6 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  .col-6
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='col-6'></div>"
+                  class="col-6 bg-info p-2 bg-opacity-10 border border-primary"
+                >
+                  .col-6
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card p-5">
+            <h2>Forms</h2>
+
+            <form class="mb-2 border border-primary rounded p-5">
+              <div class="mb-3">
+                <label
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<form><label class='form-label'></label></form>"
+                  for="exampleInputEmail1"
+                  class="form-label"
+                  >Email address</label
+                >
+                <input
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<form><input class='form-control' type='email' /></form>"
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<form><div class='form-text'></div></form>"
+                  id="emailHelp"
+                  class="form-text"
+                >
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<form><label class='form-label'></label></form>"
+                  for="exampleInputPassword1"
+                  class="form-label"
+                  >Password</label
+                >
+                <input
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<form><input class='form-control' type='password' /></form>"
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<form><input class='form-check-input' type='checkbox' /></form>"
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<form><label class='form-check-label'></label></form>"
+                  class="form-check-label"
+                  for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title="<button type='button' class='btn btn-primary'></button>"
+                type="submit"
+                class="btn btn-primary"
+              >
+                Submit
+              </button>
+            </form>
+
+            <h2>Disabled forms</h2>
+
+            <form class="mb-2 border border-primary rounded p-5">
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                title="<form><fieldset disabled>...</fieldset></form>"
+              >
+                <fieldset disabled>
+                  <legend>Disabled fieldset example</legend>
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label"
+                      >Disabled input</label
+                    >
+                    <input
+                      type="text"
+                      id="disabledTextInput"
+                      class="form-control"
+                      placeholder="Disabled input"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label"
+                      >Disabled select menu</label
+                    >
+                    <div
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<form><fieldset disabled><select class='form-select'>...</select></fieldset></form>"
+                    >
+                      <select id="disabledSelect" class="form-select">
+                        <option>Disabled select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<form><fieldset disabled><div class='form-check'><input type='checkbox' /></div></fieldset></form>"
+                      class="form-check"
+                    >
+                      <input
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        title="<input type='checkbox' class='form-check-input' disabled/>"
+                        class="form-check-input"
+                        type="checkbox"
+                        id="disabledFieldsetCheck"
+                        disabled
+                      />
+                      <label
+                        class="form-check-label"
+                        for="disabledFieldsetCheck"
+                      >
+                        Can't check this
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </div>
+            </form>
+          </section>
+          <section class="card p-5">
+            <h2>Navbar</h2>
+
+            <nav
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<nav class='navbar navbar-expand-lg bg-primary rounded'><div class='container-fluid'>...</div></nav>"
+              class="mb-2 navbar navbar-expand-lg bg-primary rounded"
+            >
+              <div class="container-fluid">
+                <a
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<a class='navbar-brand'>Navbar</a>"
+                  class="navbar-brand"
+                  href="#"
+                  >Navbar</a
+                >
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button>"
+                >
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<div class='collapse navbar-collapse' id='navbarSupportedContent'><ul class='navbar-nav me-auto mb-2 mb-lg-0'>...</ul></div>"
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-light" type="submit">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+
+            <h2>Nav items</h2>
+
+            <nav class="mb-2 navbar navbar-expand-lg bg-success rounded">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    title="<div class='navbar-nav'><a class='nav-link'>...</a></div>"
+                    class="navbar-nav"
+                  >
+                    <a
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<a class='nav-link active' aria-current='page'>...</a>"
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <div
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<a class='nav-link disabled'>...</a>"
+                    >
+                      <a class="nav-link disabled">Disabled</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+            <h2>Nav form</h2>
+
+            <nav class="navbar bg-warning rounded">
+              <div class="container-fluid">
+                <form
+                data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<form class='d-flex' role='search'>...</form>"
+                class="d-flex" role="search">
+                  <input data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<input class='form-control me-2' type='search' placeholder='Search' aria-label='Search' />" 
+                  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  title="<button class='btn btn-outline-danger' type=submit'>...</button>" 
+                  class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+          </section>
+
+          <section class="card p-5">
+            <h2>Spacing: margins & padding</h2>
+
+            <div class="position-relative container py-3 border border-primary bg-info bg-opacity-10 rounded" style="min-height: 200px;">
+              <p class="p-1 bg-white">padding: p-[no]</p>
+              <p class="p-1 bg-white">padding-inline: px-[no]</p>
+              <p class="p-1 bg-white">padding-left: ps-[no]</p>
+              <p class="p-1 bg-white">padding-right: pe-[no]</p>
+              <div
+              data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<div class='p-3 mx-auto mt-5 bg-dark text-white p-1 rounded'></div>" 
+              class="p-3 mx-auto mt-5 bg-dark text-white p-1 rounded">margin-top--mt-5</div>
+              <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              title="<div class='p-3 mx-auto mt-5 bg-dark text-white p-1 rounded'></div>" 
+              class="p-3 mx-auto mb-5 bg-dark text-white p-1 rounded">margin-bottom--mb-5</div>
+              <div
+              data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<div class='p-3 ms-5 d-inline-block bg-dark text-white p-1 rounded'></div>" 
+              class="p-3 ms-5 d-inline-block bg-dark text-white p-1 rounded">margin-left--ms-5</div>
+              <div
+              data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<div class='p-3 me-5 d-inline-block mt-5 bg-dark text-white p-1 rounded'></div>" 
+              class="p-3 me-5 d-inline-block bg-dark text-white p-1 rounded">margin-right--me-5</div>
+              <div
+              data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      title="<div class='p-3 d-inline-block bg-dark text-white p-1 rounded'></div>" 
+              class="p-3 d-inline-block bg-dark text-white p-1 rounded">Dummy block</div>
+              
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://unpkg.com/@popperjs/core@2"
+      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

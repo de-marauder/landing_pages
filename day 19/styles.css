@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pri-bg-color: radial-gradient( circle farthest-corner at -4.5% 34.3%,  rgba(13,20,174,1) 0%, rgba(243,165,140,1) 90% );
+    --tooltip-bg: #f8b0b0;
+}
+body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: radial-gradient( circle farthest-corner at -4.5% 34.3%,  rgba(13,20,174,1) 0%, rgba(243,165,140,1) 90% );
+}
+
+main {
+    background: #eeeeee85;
+    width: 100%;
+    min-height: 100vh;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+header .navbar {
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background: var(--pri-bg-color);
+    position: fixed;
+    z-index: 1000;
+}
+header .nav-link {
+    color: #ddd;
+}
+header .nav-link.active,
+header .nav-link:hover {
+    color: #fff !important;
+}
+
+.title-span {
+    display: inline-block;
+    border: 3px solid #f8b0b0;
+    border-inline: 0;
+    padding: 0 2px;
+    line-height: .8em;
+    background-color: #f8b0b0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 500px) { 
+    #flex {
+        overflow-x: scroll;
+        box-shadow: inset 0px 0 5px #111;
+    }
+}
+
+*[data-bs-toggle='tooltip'] { 
+    border: dashed inherit 2px !important;
+}
+*[data-bs-toggle='tooltip']:hover,
+*[data-bs-toggle='tooltip']:active { 
+    border: dashed var(--tooltip-bg) 2px !important;
+}
+/* Utilities */
+.card {
+    margin-bottom: 1rem;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--tooltip-bg);
+    --bs-tooltip-color: black;
+  }
